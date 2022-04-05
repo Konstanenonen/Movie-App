@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 
+/* Reset end */
 
 * {
   box-sizing: border-box;
@@ -69,6 +70,8 @@ h2 {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -106,4 +109,5 @@ img {
 footer {
   margin-top: 30px;
   font-size: 1.1rem;
+  
 }
