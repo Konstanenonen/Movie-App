@@ -10,10 +10,10 @@ axios
       .map(
         (movie) =>
           `<tr class="table">
-      <td>${movie.Title}</td>
-      <td>${movie.Year}</td>
-      <td>${movie.Type}</td>
-      <td><img width=200 height=auto src="${movie.Poster}" /></td>
+      <td class="table-text">${movie.Title}</td>
+      <td class="table-text">${movie.Year}</td>
+      <td class="table-text">${movie.Type}</td>
+      <td><img src="${movie.Poster}" /></td>
       </tr>`
       )
       .reduce((pre, cur) => pre + cur);
@@ -34,7 +34,7 @@ axios
 
     /* GET home page. */
     router.get("/", function (req, res, next) {
-      res.render("pages/index", { title: "Movie App", table: table });
+      res.render("pages/index", { title: "Lord of The Rings info", table: table });
     });
   });
 
